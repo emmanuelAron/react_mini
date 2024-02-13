@@ -3,11 +3,59 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 12,
             "patches": [
                 {
                     "date": 1707851197589,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1707861094147,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,8 @@\n \r\n   return (\r\n     <div className='form'>\r\n       \r\n-\r\n       <input\r\n         type='text'\r\n         placeholder=\"add a task..\"\r\n         value={newTask}\r\n@@ -34,9 +33,10 @@\n \r\n       <ul>\r\n         {items.map(item => (\r\n           <li key={item.id}>\r\n-            {item.value} <button onClick={() => deleteItem(item.id)}>Delete</button>\r\n+            {item.value} \r\n+            <button onClick={() => deleteItem(item.id)}>Delete</button>\r\n           </li>\r\n         ))}\r\n       </ul>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1707861110688,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,8 +34,15 @@\n       <ul>\r\n         {items.map(item => (\r\n           <li key={item.id}>\r\n             {item.value} \r\n+            \r\n+\r\n+\r\n+\r\n+            \r\n+            \r\n+            \r\n             <button onClick={() => deleteItem(item.id)}>Delete</button>\r\n           </li>\r\n         ))}\r\n       </ul>\r\n"
+                },
+                {
+                    "date": 1707861118054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,13 +36,16 @@\n           <li key={item.id}>\r\n             {item.value} \r\n             \r\n \r\n+          \r\n \r\n \r\n+\r\n+\r\n+\r\n             \r\n             \r\n-            \r\n             <button onClick={() => deleteItem(item.id)}>Delete</button>\r\n           </li>\r\n         ))}\r\n       </ul>\r\n"
+                },
+                {
+                    "date": 1707861124086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,21 @@\n           <li key={item.id}>\r\n             {item.value} \r\n             \r\n \r\n-          \r\n+            <div key={taskObj.id} className=\"movie card\">\r\n+                        <h2> <Link to={`/tasks/${i+1}`}> Task </Link> </h2>\r\n+                        <h2> {taskObj.task} </h2>\r\n+                        <p className=\"condition\">  \r\n+                        <img src=\"https://fontmeme.com/permalink/240213/ec2620d3b0600c5b51289ca99eb00f88.png\" alt=\"police-anglosax-oblique\" border=\"0\" />\r\n+                        {\r\n+                        taskObj.completed ?  \r\n+                         <img className=\"correct\" src=\"images/Flat_tick_icon.svg\"></img> : \r\n+                        <img className=\"correct\" src=\"images/x.png\"></img> \r\n+                        } \r\n+                        </p>\r\n+                        <button onClick={() => {deleteTask(taskObj.id)}}>Delete</button>\r\n+                    </div>\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1707861154933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n           <li key={item.id}>\r\n             {item.value} \r\n             \r\n \r\n-            <div key={taskObj.id} className=\"movie card\">\r\n+            {/* <div key={taskObj.id} className=\"movie card\">\r\n                         <h2> <Link to={`/tasks/${i+1}`}> Task </Link> </h2>\r\n                         <h2> {taskObj.task} </h2>\r\n                         <p className=\"condition\">  \r\n                         <img src=\"https://fontmeme.com/permalink/240213/ec2620d3b0600c5b51289ca99eb00f88.png\" alt=\"police-anglosax-oblique\" border=\"0\" />\r\n@@ -48,9 +48,9 @@\n                         <img className=\"correct\" src=\"images/x.png\"></img> \r\n                         } \r\n                         </p>\r\n                         <button onClick={() => {deleteTask(taskObj.id)}}>Delete</button>\r\n-                    </div>\r\n+                    </div> */}\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1707861180644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n           <li key={item.id}>\r\n             {item.value} \r\n             \r\n \r\n-            {/* <div key={taskObj.id} className=\"movie card\">\r\n+             <div key={taskObj.id} className=\"movie card\">\r\n                         <h2> <Link to={`/tasks/${i+1}`}> Task </Link> </h2>\r\n                         <h2> {taskObj.task} </h2>\r\n                         <p className=\"condition\">  \r\n                         <img src=\"https://fontmeme.com/permalink/240213/ec2620d3b0600c5b51289ca99eb00f88.png\" alt=\"police-anglosax-oblique\" border=\"0\" />\r\n"
+                },
+                {
+                    "date": 1707861194389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n           <li key={item.id}>\r\n             {item.value} \r\n             \r\n \r\n-             <div key={taskObj.id} className=\"movie card\">\r\n+             <div key={item.id} className=\"movie card\">\r\n                         <h2> <Link to={`/tasks/${i+1}`}> Task </Link> </h2>\r\n                         <h2> {taskObj.task} </h2>\r\n                         <p className=\"condition\">  \r\n                         <img src=\"https://fontmeme.com/permalink/240213/ec2620d3b0600c5b51289ca99eb00f88.png\" alt=\"police-anglosax-oblique\" border=\"0\" />\r\n@@ -48,9 +48,9 @@\n                         <img className=\"correct\" src=\"images/x.png\"></img> \r\n                         } \r\n                         </p>\r\n                         <button onClick={() => {deleteTask(taskObj.id)}}>Delete</button>\r\n-                    </div> */}\r\n+                    </div> \r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1707861201136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,13 +38,13 @@\n             \r\n \r\n              <div key={item.id} className=\"movie card\">\r\n                         <h2> <Link to={`/tasks/${i+1}`}> Task </Link> </h2>\r\n-                        <h2> {taskObj.task} </h2>\r\n+                        <h2> {item.task} </h2>\r\n                         <p className=\"condition\">  \r\n                         <img src=\"https://fontmeme.com/permalink/240213/ec2620d3b0600c5b51289ca99eb00f88.png\" alt=\"police-anglosax-oblique\" border=\"0\" />\r\n                         {\r\n-                        taskObj.completed ?  \r\n+                        item.completed ?  \r\n                          <img className=\"correct\" src=\"images/Flat_tick_icon.svg\"></img> : \r\n                         <img className=\"correct\" src=\"images/x.png\"></img> \r\n                         } \r\n                         </p>\r\n"
+                },
+                {
+                    "date": 1707861214831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n \r\n       <ul>\r\n         {items.map(item => (\r\n           <li key={item.id}>\r\n-            {item.value} \r\n+            {/* {item.value}  */}\r\n             \r\n \r\n              <div key={item.id} className=\"movie card\">\r\n                         <h2> <Link to={`/tasks/${i+1}`}> Task </Link> </h2>\r\n@@ -47,9 +47,9 @@\n                          <img className=\"correct\" src=\"images/Flat_tick_icon.svg\"></img> : \r\n                         <img className=\"correct\" src=\"images/x.png\"></img> \r\n                         } \r\n                         </p>\r\n-                        <button onClick={() => {deleteTask(taskObj.id)}}>Delete</button>\r\n+                        <button onClick={() => {deleteTask(item.id)}}>Delete</button>\r\n                     </div> \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1707861274494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n import { useState } from \"react\";\r\n+import data from \"../../data.json\"\r\n+import { Link } from 'react-router-dom';\r\n \r\n-\r\n function AddItemForm() {\r\n   const [newTask, setNewTask] = useState(\"\");\r\n   const [items, setItems] = useState([]);\r\n \r\n"
+                },
+                {
+                    "date": 1707861362020,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n \r\n       <button onClick={() => addItem()}>Add</button>\r\n \r\n       <ul>\r\n-        {items.map(item => (\r\n+        {items.map((item => (\r\n           <li key={item.id}>\r\n             {/* {item.value}  */}\r\n             \r\n \r\n"
+                },
+                {
+                    "date": 1707861494400,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n \r\n       <button onClick={() => addItem()}>Add</button>\r\n \r\n       <ul>\r\n-        {items.map((item => (\r\n+        {items.map((item,i) => (\r\n           <li key={item.id}>\r\n             {/* {item.value}  */}\r\n             \r\n \r\n@@ -48,9 +48,9 @@\n                          <img className=\"correct\" src=\"images/Flat_tick_icon.svg\"></img> : \r\n                         <img className=\"correct\" src=\"images/x.png\"></img> \r\n                         } \r\n                         </p>\r\n-                        <button onClick={() => {deleteTask(item.id)}}>Delete</button>\r\n+                        {/* <button onClick={() => {deleteTask(item.id)}}>Delete</button> */}\r\n                     </div> \r\n \r\n \r\n \r\n"
                 }
             ],
             "date": 1707851197589,

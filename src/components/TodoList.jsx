@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 function TodoList(){
     
     const [ tasksToDisplay, setTasksToDisplay ] = useState(data)
-   //console.log('tasksToDisplay: ',tasksToDisplay)
     
     const deleteTask = (taskId) => {
         const newList = tasksToDisplay.filter((taskObj) => {
@@ -24,15 +23,10 @@ function TodoList(){
                     <div key={taskObj.id} className="movie card">
                         <h2> <Link to={`/tasks/${i+1}`}> Task </Link> </h2>
                         <h2> {taskObj.task} </h2>
-                        
-                        
                         <p className="condition">  
-
                         <img src="https://fontmeme.com/permalink/240213/ec2620d3b0600c5b51289ca99eb00f88.png" alt="police-anglosax-oblique" border="0" />
-
                         {
-                        taskObj.completed ? 
-                        
+                        taskObj.completed ?  
                          <img className="correct" src="images/Flat_tick_icon.svg"></img> : 
                         <img className="correct" src="images/x.png"></img> 
                         } 
