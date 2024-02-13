@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 9,
+            "activePatchIndex": 19,
             "patches": [
                 {
                     "date": 1707762188669,
@@ -44,6 +44,46 @@
                 {
                     "date": 1707762279513,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,7 @@\n+import React from 'react'\r\n+\r\n+export const About = () => {\r\n+  return (\r\n+    <div>About</div>\r\n+  )\r\n+}\r\n"
+                },
+                {
+                    "date": 1707851553931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n import React from 'react'\r\n \r\n export const About = () => {\r\n   return (\r\n-    <div>About</div>\r\n+    <div>WeAbout</div>\r\n   )\r\n }\r\n\\ No newline at end of file\n-raf\n"
+                },
+                {
+                    "date": 1707851565578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n \r\n export const About = () => {\r\n   return (\r\n-    <div>WeAbout</div>\r\n+    <div>You are </div>\r\n   )\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1707851570862,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n \r\n export const About = () => {\r\n   return (\r\n-    <div>You are </div>\r\n+    <div>You are on the </div>\r\n   )\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1707851576481,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n \r\n export const About = () => {\r\n   return (\r\n-    <div>You are on the </div>\r\n+    <div>You are on the Todo</div>\r\n   )\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1707851588576,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n \r\n export const About = () => {\r\n   return (\r\n-    <div>You are on the Todo</div>\r\n+    <div>You are on the Todo-List application created </div>\r\n   )\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1707851598417,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n \r\n export const About = () => {\r\n   return (\r\n-    <div>You are on the Todo-List application created </div>\r\n+    <div>You are on the Todo-List application created by Emmanuel and Busra</div>\r\n   )\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1707851604115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n \r\n export const About = () => {\r\n   return (\r\n-    <div>You are on the Todo-List application created by Emmanuel and Busra</div>\r\n+    <div>You are on the Todo-List application created by Emmanuel and Busra in </div>\r\n   )\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1707851625587,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n \r\n export const About = () => {\r\n   return (\r\n-    <div>You are on the Todo-List application created by Emmanuel and Busra in </div>\r\n+    <h1>You are on the Todo-List application created by Emmanuel and Busra in 2024</div>\r\n   )\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1707851650821,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n \r\n export const About = () => {\r\n   return (\r\n-    <h1>You are on the Todo-List application created by Emmanuel and Busra in 2024</div>\r\n+    <h1 >You are on the Todo-List application created by Emmanuel and Busra in 2024</h1>\r\n   )\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1707851659766,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n \r\n export const About = () => {\r\n   return (\r\n-    <h1 >You are on the Todo-List application created by Emmanuel and Busra in 2024</h1>\r\n+    <h1 cla>You are on the Todo-List application created by Emmanuel and Busra in 2024</h1>\r\n   )\r\n\\ No newline at end of file\n-}\n+}\r\n"
                 }
             ],
             "date": 1707762188669,

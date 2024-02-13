@@ -2,6 +2,6 @@ import React from 'react'
 
 export const About = () => {
   return (
-    <div>About</div>
+    <h1 className=''>You are on the Todo-List application created by Emmanuel and Busra in 2024</h1>
   )
 }

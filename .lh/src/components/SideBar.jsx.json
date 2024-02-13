@@ -1,0 +1,70 @@
+{
+    "sourceFile": "src/components/SideBar.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 13,
+            "patches": [
+                {
+                    "date": 1707850706721,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1707850715477,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n function SideBar(){\r\n     return(\r\n         <>\r\n         <ul className=\"sidebar\">\r\n-            <li> <a href=\"index.jsx\">Home</a></li> {/* i replaced home.html by index.html */}\r\n+            <li> <a href=\"index.html\">Home</a></li>\r\n             <li> <a href=\"about.html\">About</a></li>\r\n         </ul>\r\n         </>\r\n     )\r\n"
+                },
+                {
+                    "date": 1707850745618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n function SideBar(){\r\n     return(\r\n         <>\r\n         <ul className=\"sidebar\">\r\n-            <li> <a href=\"index.html\">Home</a></li>\r\n+            <li> <a href=\"App\">Home</a></li>\r\n             <li> <a href=\"about.html\">About</a></li>\r\n         </ul>\r\n         </>\r\n     )\r\n"
+                },
+                {
+                    "date": 1707850772835,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n function SideBar(){\r\n     return(\r\n         <>\r\n         <ul className=\"sidebar\">\r\n-            <li> <a href=\"App\">Home</a></li>\r\n+            {/* <li> <a href=\"App.jsx\">Home</a></li> */}\r\n             <li> <a href=\"about.html\">About</a></li>\r\n         </ul>\r\n         </>\r\n     )\r\n"
+                },
+                {
+                    "date": 1707850779341,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,15 @@\n+import React from \"react\";\r\n+import '../css/SideBar.css';\r\n+\r\n+function SideBar(){\r\n+    return(\r\n+        <>\r\n+        <ul className=\"sidebar\">\r\n+            {/* <li> <a href=\"App.jsx\">Home</a></li> */}\r\n+            \r\n+            <li> <a href=\"about.html\">About</a></li>\r\n+        </ul>\r\n+        </>\r\n+    )\r\n+}\r\n+export default SideBar;\r\n"
+                },
+                {
+                    "date": 1707850785159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,25 +5,11 @@\n     return(\r\n         <>\r\n         <ul className=\"sidebar\">\r\n             {/* <li> <a href=\"App.jsx\">Home</a></li> */}\r\n-            \r\n+            <li>Li</li>\r\n             <li> <a href=\"about.html\">About</a></li>\r\n         </ul>\r\n         </>\r\n     )\r\n }\r\n export default SideBar;\r\n-import React from \"react\";\r\n-import '../css/SideBar.css';\r\n-\r\n-function SideBar(){\r\n-    return(\r\n-        <>\r\n-        <ul className=\"sidebar\">\r\n-            {/* <li> <a href=\"App.jsx\">Home</a></li> */}\r\n-            <li> <a href=\"about.html\">About</a></li>\r\n-        </ul>\r\n-        </>\r\n-    )\r\n-}\r\n-export default SideBar;\r\n"
+                },
+                {
+                    "date": 1707850877275,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     return(\r\n         <>\r\n         <ul className=\"sidebar\">\r\n             {/* <li> <a href=\"App.jsx\">Home</a></li> */}\r\n-            <li>Li</li>\r\n+            <li><Link to=\"/\"></Link></li>\r\n             <li> <a href=\"about.html\">About</a></li>\r\n         </ul>\r\n         </>\r\n     )\r\n"
+                },
+                {
+                    "date": 1707850885984,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     return(\r\n         <>\r\n         <ul className=\"sidebar\">\r\n             {/* <li> <a href=\"App.jsx\">Home</a></li> */}\r\n-            <li><Link to=\"/\"></Link></li>\r\n+            <li><Link to=\"/\">Home</Link></li>\r\n             <li> <a href=\"about.html\">About</a></li>\r\n         </ul>\r\n         </>\r\n     )\r\n"
+                },
+                {
+                    "date": 1707850931071,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n import React from \"react\";\r\n import '../css/SideBar.css';\r\n+import { Link } from \"react-router-dom\"; \r\n \r\n function SideBar(){\r\n     return(\r\n         <>\r\n"
+                },
+                {
+                    "date": 1707850956424,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n         <>\r\n         <ul className=\"sidebar\">\r\n             {/* <li> <a href=\"App.jsx\">Home</a></li> */}\r\n             <li><Link to=\"/\">Home</Link></li>\r\n-            <li> <a href=\"about.html\">About</a></li>\r\n+            <li> <a href=\"about.html\">About </a></li>\r\n         </ul>\r\n         </>\r\n     )\r\n }\r\n"
+                },
+                {
+                    "date": 1707851497582,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+import React from \"react\";\r\n+import '../css/SideBar.css';\r\n+import { Link } from \"react-router-dom\"; \r\n+\r\n+function SideBar(){\r\n+    return(\r\n+        <>\r\n+        <ul className=\"sidebar\">\r\n+            {/* <li> <a href=\"App.jsx\">Home</a></li> */}\r\n+            <li><Link to=\"/\">Home</Link></li>\r\n+            <li> <Link to=\"/about\"> About </Link></li>\r\n+        </ul>\r\n+        </>\r\n+    )\r\n+}\r\n+export default SideBar;\r\n"
+                },
+                {
+                    "date": 1707851503011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,26 +7,10 @@\n         <>\r\n         <ul className=\"sidebar\">\r\n             {/* <li> <a href=\"App.jsx\">Home</a></li> */}\r\n             <li><Link to=\"/\">Home</Link></li>\r\n-            <li> <Link to=\"/about\"> About </Link></li>\r\n+            <li> <Link to=\"/about\"> About us </Link></li>\r\n         </ul>\r\n         </>\r\n     )\r\n }\r\n export default SideBar;\r\n-import React from \"react\";\r\n-import '../css/SideBar.css';\r\n-import { Link } from \"react-router-dom\"; \r\n-\r\n-function SideBar(){\r\n-    return(\r\n-        <>\r\n-        <ul className=\"sidebar\">\r\n-            {/* <li> <a href=\"App.jsx\">Home</a></li> */}\r\n-            <li><Link to=\"/\">Home</Link></li>\r\n-            <li> <a href=\"about.html\">About </a></li>\r\n-        </ul>\r\n-        </>\r\n-    )\r\n-}\r\n-export default SideBar;\r\n"
+                },
+                {
+                    "date": 1707853720672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+import React from \"react\";\r\n+import '../css/SideBar.css';\r\n+import { Link } from \"react-router-dom\"; \r\n+\r\n+function SideBar(){\r\n+    return(\r\n+        <>\r\n+        <ul className=\"sidebar\">\r\n+            {/* <li> <a href=\"App.jsx\">Home</a></li> */}\r\n+            <li><Link to=\"/\" >Home</Link></li>\r\n+            <li> <Link to=\"/about\"> About us </Link></li>\r\n+        </ul>\r\n+        </>\r\n+    )\r\n+}\r\n+export default SideBar;\r\n"
+                },
+                {
+                    "date": 1707853729528,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,27 +6,11 @@\n     return(\r\n         <>\r\n         <ul className=\"sidebar\">\r\n             {/* <li> <a href=\"App.jsx\">Home</a></li> */}\r\n-            <li><Link to=\"/\" >Home</Link></li>\r\n-            <li> <Link to=\"/about\"> About us </Link></li>\r\n+            <li><Link to=\"/\" className=\"sidebar-link\">Home</Link></li>\r\n+            <li> <Link to=\"/about\" className=\"sidebar-link\">> About us </Link></li>\r\n         </ul>\r\n         </>\r\n     )\r\n }\r\n export default SideBar;\r\n-import React from \"react\";\r\n-import '../css/SideBar.css';\r\n-import { Link } from \"react-router-dom\"; \r\n-\r\n-function SideBar(){\r\n-    return(\r\n-        <>\r\n-        <ul className=\"sidebar\">\r\n-            {/* <li> <a href=\"App.jsx\">Home</a></li> */}\r\n-            <li><Link to=\"/\">Home</Link></li>\r\n-            <li> <Link to=\"/about\"> About us </Link></li>\r\n-        </ul>\r\n-        </>\r\n-    )\r\n-}\r\n-export default SideBar;\r\n"
+                }
+            ],
+            "date": 1707850706721,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\nimport '../css/SideBar.css';\r\n\r\nfunction SideBar(){\r\n    return(\r\n        <>\r\n        <ul className=\"sidebar\">\r\n            <li> <a href=\"index.jsx\">Home</a></li> {/* i replaced home.html by index.html */}\r\n            <li> <a href=\"about.html\">About</a></li>\r\n        </ul>\r\n        </>\r\n    )\r\n}\r\nexport default SideBar;\r\n"
+        }
+    ]
+}

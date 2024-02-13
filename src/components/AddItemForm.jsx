@@ -21,8 +21,7 @@ function AddItemForm() {
 
   return (
     <div className='form'>
-      <h1>TO DO LIST</h1>
-
+      
       <input
         type='text'
         placeholder="add a task.."

@@ -8,4 +8,20 @@
   background-color: bisque;
   overflow-x: hidden;
   padding-top: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0;
+  }
+  li{
+    list-style-type: none;
+    padding: 50px 0;/*  Vertical spacing   */
+  }
+  li a{
+    text-decoration: none;
+  }
+  .sidebar-link {
+    font-size: 25px; 
+    font-weight: bold; 
   }

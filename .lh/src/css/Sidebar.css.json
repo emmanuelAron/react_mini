@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/css/Sidebar.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1707846685151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1707846719511,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,5 +8,6 @@\n   background-color: bisque;\r\n   overflow-x: hidden;\r\n   padding-top: 20px;\r\n   \r\n-  }\n\\ No newline at end of file\n+  }\r\n+  li a\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1707846783795,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,5 +12,5 @@\n   }\r\n   li a{\r\n     text-decoration: none;\r\n   }\r\n-  \n\\ No newline at end of file\n+  l\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1707854058903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,24 @@\n+.sidebar {\r\n+    height: 100%;\r\n+  width: 160px;\r\n+  position: fixed;\r\n+  z-index: 1;\r\n+  top: 0;\r\n+  left: 0;\r\n+  background-color: bisque;\r\n+  overflow-x: hidden;\r\n+  padding-top: 20px;\r\n+  text-align: center;\r\n+  display: flex;\r\n+  \r\n+  }\r\n+  li{\r\n+    list-style-type: none;\r\n+  }\r\n+  li a{\r\n+    text-decoration: none;\r\n+  }\r\n+  .sidebar-link {\r\n+    font-size: 25px; \r\n+    font-weight: bold; \r\n+  }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1707846685151,
+            "name": "Commit-0",
+            "content": ".sidebar {\r\n    height: 100%;\r\n  width: 160px;\r\n  position: fixed;\r\n  z-index: 1;\r\n  top: 0;\r\n  left: 0;\r\n  background-color: bisque;\r\n  overflow-x: hidden;\r\n  padding-top: 20px;\r\n  \r\n  }"
+        }
+    ]
+}
