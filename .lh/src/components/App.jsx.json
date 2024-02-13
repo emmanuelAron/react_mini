@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/App.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1707760249672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1707760249672,
+            "name": "Commit-0",
+            "content": "\r\nimport './App.css';\r\nimport { Route, Routes } from \"react-router-dom\";\r\nimport Navbar from './Navbar.jsx'\r\nimport Footer from './Footer.jsx'\r\nimport SideBar from './SideBar.jsx';\r\nimport TodoList from './TodoList.jsx';\r\nimport { NotFound } from './NotFound.jsx';\r\nimport  TaskDetails  from './TaskDetails.jsx';\r\nimport {About} from './About.jsx'\r\nimport data from \"../../data.json\"\r\n\r\n\r\nfunction App() {\r\n\r\n  return (\r\n    <div className=\"App\">\r\n\r\n      <Navbar />\r\n      <SideBar />\r\n\r\n      <Routes>\r\n        <Route path=\"/\" element={<TodoList />} />\r\n         {/* <Route path=\"/tasks/:taskId\" element={<TaskDetails />} />  */}\r\n        <Route path=\"/tasks/:taskId\" element={<TaskDetails tasksToDisplay={data} />} />\r\n        <Route path=\"/about\" element={<About />} />\r\n        <Route path=\"*\" element={<NotFound />} />\r\n      </Routes>\r\n\r\n      <Footer />\r\n    </div>\r\n  );\r\n}\r\n\r\nexport default App;"
+        }
+    ]
+}

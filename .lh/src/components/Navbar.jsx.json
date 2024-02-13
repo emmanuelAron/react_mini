@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/Navbar.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1707840671596,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1707840671596,
+            "name": "Commit-0",
+            "content": "//import logo from \"./assets/logo.png\";\r\n\r\nfunction Navbar() {\r\n    return (\r\n        <>\r\n            <nav ><img className=\"logo\" src=\"src/assets/logo.png\" alt=\"eee\" ></img>\r\n                <h1>Todo list game</h1>\r\n            </nav>\r\n        </>\r\n    )\r\n}\r\n\r\nexport default Navbar; "
+        }
+    ]
+}

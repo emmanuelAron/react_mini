@@ -1,0 +1,70 @@
+{
+    "sourceFile": "main.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 13,
+            "patches": [
+                {
+                    "date": 1707759765170,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1707759781111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n import ReactDOM from 'react-dom/client'\r\n-import App from './src/App.jsx'\r\n+import App from './/App.jsx'\r\n \r\n \r\n ReactDOM.createRoot(document.getElementById('root')).render(\r\n   <React.StrictMode>\r\n"
+                },
+                {
+                    "date": 1707759969161,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n import ReactDOM from 'react-dom/client'\r\n-import App from './/App.jsx'\r\n+import App from \r\n \r\n \r\n ReactDOM.createRoot(document.getElementById('root')).render(\r\n   <React.StrictMode>\r\n"
+                },
+                {
+                    "date": 1707759975542,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n import ReactDOM from 'react-dom/client'\r\n-import App from \r\n+import App from './src'\r\n \r\n \r\n ReactDOM.createRoot(document.getElementById('root')).render(\r\n   <React.StrictMode>\r\n"
+                },
+                {
+                    "date": 1707759987171,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n import ReactDOM from 'react-dom/client'\r\n-import App from './src'\r\n+import App from './src/App.jsx'\r\n \r\n \r\n ReactDOM.createRoot(document.getElementById('root')).render(\r\n   <React.StrictMode>\r\n"
+                },
+                {
+                    "date": 1707760061786,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n import ReactDOM from 'react-dom/client'\r\n-import App from './src/App.jsx'\r\n+import App from './App.jsx'\r\n \r\n \r\n ReactDOM.createRoot(document.getElementById('root')).render(\r\n   <React.StrictMode>\r\n"
+                },
+                {
+                    "date": 1707760286730,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n import ReactDOM from 'react-dom/client'\r\n-import App from './App.jsx'\r\n+import App from '.components/App.jsx'\r\n \r\n \r\n ReactDOM.createRoot(document.getElementById('root')).render(\r\n   <React.StrictMode>\r\n"
+                },
+                {
+                    "date": 1707760304833,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n import ReactDOM from 'react-dom/client'\r\n-import App from '.components/App.jsx'\r\n+import App from './components/App.jsx'\r\n \r\n \r\n ReactDOM.createRoot(document.getElementById('root')).render(\r\n   <React.StrictMode>\r\n"
+                },
+                {
+                    "date": 1707760368577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n import ReactDOM from 'react-dom/client'\r\n-import App from './components/App.jsx'\r\n+import App from './srccomponents/App.jsx'\r\n \r\n \r\n ReactDOM.createRoot(document.getElementById('root')).render(\r\n   <React.StrictMode>\r\n"
+                },
+                {
+                    "date": 1707760400199,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n import ReactDOM from 'react-dom/client'\r\n-import App from './srccomponents/App.jsx'\r\n+import App from './App.jsx'\r\n \r\n \r\n ReactDOM.createRoot(document.getElementById('root')).render(\r\n   <React.StrictMode>\r\n"
+                },
+                {
+                    "date": 1707760405993,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,10 @@\n+import React from 'react'\r\n+import ReactDOM from 'react-dom/client'\r\n+import App from './App.jsx'\r\n+\r\n+\r\n+ReactDOM.createRoot(document.getElementById('root')).render(\r\n+  <React.StrictMode>\r\n+    <App />\r\n+  </React.StrictMode>\r\n+)\r\n"
+                },
+                {
+                    "date": 1707762561898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,18 +2,9 @@\n import ReactDOM from 'react-dom/client'\r\n import App from './App.jsx'\r\n \r\n \r\n-ReactDOM.createRoot(document.getElementById('root')).render(\r\n-  <React.StrictMode>\r\n-    <App />\r\n-  </React.StrictMode>\r\n-)\r\n-import React from 'react'\r\n-import ReactDOM from 'react-dom/client'\r\n-import App from './App.jsx'\r\n \r\n-\r\n ReactDOM.createRoot(document.getElementById('root')).render(\r\n   <React.StrictMode>\r\n     <App />\r\n   </React.StrictMode>\r\n"
+                },
+                {
+                    "date": 1707762573751,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+import React from 'react'\r\n+import ReactDOM from 'react-dom/client'\r\n+import App from './App.jsx'\r\n+import { BrowserRouter } from 'react-router-dom';\r\n+\r\n+\r\n+ReactDOM.createRoot(document.getElementById('root')).render(\r\n+  <React.StrictMode>\r\n+    <BrowserRouter></BrowserRouter>\r\n+    <App />\r\n+  </React.StrictMode>\r\n+)\r\n"
+                },
+                {
+                    "date": 1707762579880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,19 +5,9 @@\n \r\n \r\n ReactDOM.createRoot(document.getElementById('root')).render(\r\n   <React.StrictMode>\r\n-    <BrowserRouter></BrowserRouter>\r\n+    <BrowserRouter>\r\n     <App />\r\n+    </BrowserRouter>\r\n   </React.StrictMode>\r\n )\r\n-import React from 'react'\r\n-import ReactDOM from 'react-dom/client'\r\n-import App from './App.jsx'\r\n-\r\n-\r\n-\r\n-ReactDOM.createRoot(document.getElementById('root')).render(\r\n-  <React.StrictMode>\r\n-    <App />\r\n-  </React.StrictMode>\r\n-)\r\n"
+                }
+            ],
+            "date": 1707759765170,
+            "name": "Commit-0",
+            "content": "import React from 'react'\r\nimport ReactDOM from 'react-dom/client'\r\nimport App from './src/App.jsx'\r\n\r\n\r\nReactDOM.createRoot(document.getElementById('root')).render(\r\n  <React.StrictMode>\r\n    <App />\r\n  </React.StrictMode>\r\n)\r\n"
+        }
+    ]
+}

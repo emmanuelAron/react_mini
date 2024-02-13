@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/components/AppWhat.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1707759692406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1707759893274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,25 @@\n+\r\n+//import { useState } from 'react';\r\n+import '../css/App.css';\r\n+import Navbar from './Navbar.jsx'\r\n+import Footer from './Footer.jsx'\r\n+import SideBar from './SideBar.jsx';\r\n+//import TodoList from './TodoList.jsx';\r\n+import Dashboard from './Dashboard.jsx';\r\n+import {BrowserRouter as Router ,Routes,Route } from \"react-router-dom\"\r\n+\r\n+function App() {\r\n+\r\n+  return (\r\n+    <div className=\"App\">\r\n+      <Router>\r\n+        <Navbar />\r\n+        <Dashboard />\r\n+        <Footer />\r\n+        <SideBar />\r\n+      </Router>\r\n+    </div>\r\n+  );\r\n+}\r\n+\r\n+export default App;\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1707759692406,
+            "name": "Commit-0",
+            "content": "\r\n//import { useState } from 'react';\r\nimport '../css/App.css';\r\nimport Navbar from './Navbar.jsx'\r\nimport Footer from './Footer.jsx'\r\nimport SideBar from './SideBar.jsx';\r\nimport TodoList from './TodoList.jsx';\r\nimport Dashboard from './Dashboard.jsx';\r\nimport {BrowserRouter as Router ,Routes,Route } from \"react-router-dom\"\r\n\r\nfunction App() {\r\n\r\n  return (\r\n    <div className=\"App\">\r\n      <Router>\r\n        <Navbar />\r\n        <Dashboard />\r\n        <Footer />\r\n        <SideBar />\r\n      </Router>\r\n    </div>\r\n  );\r\n}\r\n\r\nexport default App;"
+        }
+    ]
+}
