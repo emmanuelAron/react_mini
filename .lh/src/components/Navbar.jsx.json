@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1707840671596,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1707844905638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n function Navbar() {\r\n     return (\r\n         <>\r\n-            <nav ><img className=\"logo\" src=\"src/assets/logo.png\" alt=\"eee\" ></img>\r\n+            <nav ><img className=\"logo\" src=\"/logo.png\" alt=\"eee\" ></img>\r\n                 <h1>Todo list game</h1>\r\n             </nav>\r\n         </>\r\n     )\r\n"
                 }
             ],
             "date": 1707840671596,

@@ -31,8 +31,8 @@ function TodoList(){
                         {
                         taskObj.completed ? 
                         
-                         <img className="correct" src="src/assets/Flat_tick_icon.svg"></img> : 
-                        <img className="correct" src="src/assets/x.png"></img> 
+                         <img className="correct" src="images/Flat_tick_icon.svg"></img> : 
+                        <img className="correct" src="images/x.png"></img> 
                         } 
                         </p>
                         <button onClick={() => {deleteTask(taskObj.id)}}>Delete</button>
