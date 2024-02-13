@@ -3,11 +3,39 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 7,
             "patches": [
                 {
                     "date": 1707763109587,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1707855090096,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     return (\r\n     <div key={task.id} className=\"movie card\">\r\n       <h2> Task: {task.task} </h2>\r\n       {/* Item details here ? */}\r\n-      <p className=\"condition\"> Condition: \r\n+      <p className=\"condition\"> Done: \r\n         {task.completed ? \r\n           <img className=\"correct\" src=\"src/Flat_tick_icon.svg\" alt=\"correct\" /> : \r\n           <img className=\"correct\" src=\"src/x.png\" alt=\"incorrect\" />\r\n         } \r\n"
+                },
+                {
+                    "date": 1707858055508,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import '../css/App.css'\r\n import '../css/Footer.css'\r\n import '../css/index.css'\r\n import '../css/Sidebar.css'\r\n-import deleteTask from './TodoList_LastOld'\r\n+import deleteTask from './TodoList'\r\n \r\n //TO DO.....\r\n const ItemDetails = () => {\r\n \r\n@@ -19,9 +19,9 @@\n     return (\r\n     <div key={task.id} className=\"movie card\">\r\n       <h2> Task: {task.task} </h2>\r\n       {/* Item details here ? */}\r\n-      <p className=\"condition\"> Done: \r\n+      <p className=\"condition\"> Done ? \r\n         {task.completed ? \r\n           <img className=\"correct\" src=\"src/Flat_tick_icon.svg\" alt=\"correct\" /> : \r\n           <img className=\"correct\" src=\"src/x.png\" alt=\"incorrect\" />\r\n         } \r\n"
+                },
+                {
+                    "date": 1707858068691,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,14 +8,8 @@\n \r\n //TO DO.....\r\n const ItemDetails = () => {\r\n \r\n-    // const deleteTask = (taskId) => {\r\n-    //     const newList = tasksToDisplay.filter((taskObj) => {\r\n-    //         return taskObj.id !== taskId;\r\n-    //     });\r\n-    //     setTaskToDisplay(newList);\r\n-    // }\r\n \r\n     return (\r\n     <div key={task.id} className=\"movie card\">\r\n       <h2> Task: {task.task} </h2>\r\n"
+                },
+                {
+                    "date": 1707858086711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,26 @@\n+import React from 'react';\r\n+import task from './Task';\r\n+import '../css/App.css'\r\n+import '../css/Footer.css'\r\n+import '../css/index.css'\r\n+import '../css/Sidebar.css'\r\n+import deleteTask from './TodoList'\r\n+\r\n+const ItemDetails = () => {\r\n+\r\n+    return (\r\n+    <div key={task.id} className=\"movie card\">\r\n+      ddfdfdfdf\r\n+      <h2> Task: {task.task} </h2>\r\n+      {/* Item details here ? */}\r\n+      <p className=\"condition\"> Done ? \r\n+        {task.completed ? \r\n+          <img className=\"correct\" src=\"src/Flat_tick_icon.svg\" alt=\"correct\" /> : \r\n+          <img className=\"correct\" src=\"src/x.png\" alt=\"incorrect\" />\r\n+        } \r\n+      </p>\r\n+      <button onClick={() => { deleteTask(task.id) }}>Delete</button>\r\n+    </div>)\r\n+}\r\n+\r\n+export default ItemDetails;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1707858095403,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,8 @@\n const ItemDetails = () => {\r\n \r\n     return (\r\n     <div key={task.id} className=\"movie card\">\r\n-      ddfdfdfdf\r\n       <h2> Task: {task.task} </h2>\r\n       {/* Item details here ? */}\r\n       <p className=\"condition\"> Done ? \r\n         {task.completed ? \r\n@@ -22,32 +21,5 @@\n       <button onClick={() => { deleteTask(task.id) }}>Delete</button>\r\n     </div>)\r\n }\r\n \r\n-export default ItemDetails;\n-import React from 'react';\r\n-import task from './Task';\r\n-import '../css/App.css'\r\n-import '../css/Footer.css'\r\n-import '../css/index.css'\r\n-import '../css/Sidebar.css'\r\n-import deleteTask from './TodoList'\r\n-\r\n-//TO DO.....\r\n-const ItemDetails = () => {\r\n-\r\n-\r\n-    return (\r\n-    <div key={task.id} className=\"movie card\">\r\n-      <h2> Task: {task.task} </h2>\r\n-      {/* Item details here ? */}\r\n-      <p className=\"condition\"> Done ? \r\n-        {task.completed ? \r\n-          <img className=\"correct\" src=\"src/Flat_tick_icon.svg\" alt=\"correct\" /> : \r\n-          <img className=\"correct\" src=\"src/x.png\" alt=\"incorrect\" />\r\n-        } \r\n-      </p>\r\n-      <button onClick={() => { deleteTask(task.id) }}>Delete</button>\r\n-    </div>)\r\n-}\r\n-\r\n export default ItemDetails;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1707858208029,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,25 @@\n+import React from 'react';\r\n+import task from './Task';\r\n+import '../css/App.css'\r\n+import '../css/Footer.css'\r\n+import '../css/index.css'\r\n+import '../css/Sidebar.css'\r\n+import deleteTask from './TodoList'\r\n+\r\n+const ItemDetails = () => {\r\n+\r\n+    return (\r\n+    <div key={task.id} className=\"movie card\">\r\n+      <h2> Task: {task.task} </h2>\r\n+      {/* Item details here ? */}\r\n+      <p className=\"condition\"> Done ? \r\n+        {task.completed ? \r\n+          <img className=\"correct\" src=\"src/Flat_tick_icon.svg\" alt=\"correct\" /> : \r\n+          <img className=\"correct\" src=\"src/x.png\" alt=\"incorrect\" />\r\n+        } \r\n+      </p>\r\n+      <button  onClick={() => { deleteTask(task.id) }}>Delete</button>\r\n+    </div>)\r\n+}\r\n+\r\n+export default ItemDetails;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1707858215468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,34 +17,9 @@\n           <img className=\"correct\" src=\"src/Flat_tick_icon.svg\" alt=\"correct\" /> : \r\n           <img className=\"correct\" src=\"src/x.png\" alt=\"incorrect\" />\r\n         } \r\n       </p>\r\n-      <button  onClick={() => { deleteTask(task.id) }}>Delete</button>\r\n+      <button cl onClick={() => { deleteTask(task.id) }}>Delete</button>\r\n     </div>)\r\n }\r\n \r\n-export default ItemDetails;\n-import React from 'react';\r\n-import task from './Task';\r\n-import '../css/App.css'\r\n-import '../css/Footer.css'\r\n-import '../css/index.css'\r\n-import '../css/Sidebar.css'\r\n-import deleteTask from './TodoList'\r\n-\r\n-const ItemDetails = () => {\r\n-\r\n-    return (\r\n-    <div key={task.id} className=\"movie card\">\r\n-      <h2> Task: {task.task} </h2>\r\n-      {/* Item details here ? */}\r\n-      <p className=\"condition\"> Done ? \r\n-        {task.completed ? \r\n-          <img className=\"correct\" src=\"src/Flat_tick_icon.svg\" alt=\"correct\" /> : \r\n-          <img className=\"correct\" src=\"src/x.png\" alt=\"incorrect\" />\r\n-        } \r\n-      </p>\r\n-      <button onClick={() => { deleteTask(task.id) }}>Delete</button>\r\n-    </div>)\r\n-}\r\n-\r\n export default ItemDetails;\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1707763109587,

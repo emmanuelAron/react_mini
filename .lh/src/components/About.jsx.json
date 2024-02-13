@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 19,
+            "activePatchIndex": 21,
             "patches": [
                 {
                     "date": 1707762188669,
@@ -84,6 +84,14 @@
                 {
                     "date": 1707851659766,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n \r\n export const About = () => {\r\n   return (\r\n-    <h1 >You are on the Todo-List application created by Emmanuel and Busra in 2024</h1>\r\n+    <h1 cla>You are on the Todo-List application created by Emmanuel and Busra in 2024</h1>\r\n   )\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1707856077615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n \r\n export const About = () => {\r\n   return (\r\n-    <h1 cla>You are on the Todo-List application created by Emmanuel and Busra in 2024</h1>\r\n+    <h1 className=''>You are on the Todo-List application<br></br> created by Emmanuel and Busra in 2024</h1>\r\n   )\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1707856083534,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,5 @@\n export const About = () => {\r\n   return (\r\n     <h1 className=''>You are on the Todo-List application<br></br> created by Emmanuel and Busra in 2024</h1>\r\n   )\r\n-}\n\\ No newline at end of file\n+}\r\n"
                 }
             ],
             "date": 1707762188669,

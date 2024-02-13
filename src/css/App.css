@@ -7,7 +7,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  
+  font-family: cursive;
 }
 
 .logo {
@@ -65,4 +65,12 @@
   height: 1em;
   will-change: filter;
   transition: filter 300ms;
+}
+.title-todo{
+  color:olive;
+  font-size: 50px;
+  
+}
+.button-list{
+  size:60px;
 }

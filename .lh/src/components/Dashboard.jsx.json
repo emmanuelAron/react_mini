@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/components/Dashboard.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1707858021361,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1707858438263,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n \r\n \r\n-// Dashboard.jsx\r\n import React, { useState } from 'react';\r\n import AddItemForm from './AddItemForm';\r\n //import Todolist from './Todolist';\r\n import UpdateItemForm from './UpdateItemForm';\r\n"
+                },
+                {
+                    "date": 1707858534945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,56 @@\n+\r\n+\r\n+import React, { useState } from 'react';\r\n+import AddItemForm from './AddItemForm';\r\n+import Todolist from './Todolist';\r\n+import UpdateItemForm from './UpdateItemForm';\r\n+\r\n+function Dashboard() {\r\n+  const [items, setItems] = useState([]);\r\n+  const [selectedItem, setSelectedItem] = useState(null);\r\n+\r\n+  const handleAddItem = (newItem) => {\r\n+    // Assuming each item has a unique identifier (id)\r\n+    const newItemObject = {\r\n+      id: Math.floor(Math.random() * 1000),\r\n+      value: newItem,\r\n+    };\r\n+    setItems((prevItems) => [...prevItems, newItemObject]);\r\n+  };\r\n+  const handleUpdateItem = (itemId, updatedValue) => {\r\n+    setItems((prevItems) =>\r\n+      prevItems.map((item) =>\r\n+        item.id === itemId ? { ...item, value: updatedValue } : item\r\n+      )\r\n+    );\r\n+    setSelectedItem(null); // Reset selectedItem after update\r\n+  };\r\n+\r\n+  const handleEditItemClick = (item) => {\r\n+    setSelectedItem(item);\r\n+  };\r\n+  return (\r\n+    <div className='dashboard'>\r\n+    \r\n+    <AddItemForm onAddItem={handleAddItem} />\r\n+\r\n+    <ul>\r\n+      {items.map((item) => (\r\n+        <li key={item.id}>\r\n+          {item.value}{' '}\r\n+          <button onClick={() => handleEditItemClick(item)}>Edit</button>\r\n+        </li>\r\n+      ))}\r\n+    </ul>\r\n+\r\n+    {selectedItem && (\r\n+      <UpdateItemForm item={selectedItem} onUpdateItem={handleUpdateItem} />\r\n+    )}\r\n+\r\n+    \r\n+    <Todolist />\r\n+  </div>\r\n+);\r\n+}\r\n+\r\n+export default Dashboard;\r\n"
+                }
+            ],
+            "date": 1707858021361,
+            "name": "Commit-0",
+            "content": "\r\n\r\n// Dashboard.jsx\r\nimport React, { useState } from 'react';\r\nimport AddItemForm from './AddItemForm';\r\n//import Todolist from './Todolist';\r\nimport UpdateItemForm from './UpdateItemForm';\r\n\r\nfunction Dashboard() {\r\n  const [items, setItems] = useState([]);\r\n  const [selectedItem, setSelectedItem] = useState(null);\r\n\r\n  const handleAddItem = (newItem) => {\r\n    // Assuming each item has a unique identifier (id)\r\n    const newItemObject = {\r\n      id: Math.floor(Math.random() * 1000),\r\n      value: newItem,\r\n    };\r\n    setItems((prevItems) => [...prevItems, newItemObject]);\r\n  };\r\n  const handleUpdateItem = (itemId, updatedValue) => {\r\n    setItems((prevItems) =>\r\n      prevItems.map((item) =>\r\n        item.id === itemId ? { ...item, value: updatedValue } : item\r\n      )\r\n    );\r\n    setSelectedItem(null); // Reset selectedItem after update\r\n  };\r\n\r\n  const handleEditItemClick = (item) => {\r\n    setSelectedItem(item);\r\n  };\r\n  return (\r\n    <div className='dashboard'>\r\n    \r\n    <AddItemForm onAddItem={handleAddItem} />\r\n\r\n    <ul>\r\n      {items.map((item) => (\r\n        <li key={item.id}>\r\n          {item.value}{' '}\r\n          <button onClick={() => handleEditItemClick(item)}>Edit</button>\r\n        </li>\r\n      ))}\r\n    </ul>\r\n\r\n    {selectedItem && (\r\n      <UpdateItemForm item={selectedItem} onUpdateItem={handleUpdateItem} />\r\n    )}\r\n\r\n    \r\n    <Todolist />\r\n  </div>\r\n);\r\n}\r\n\r\nexport default Dashboard;\r\n"
+        }
+    ]
+}

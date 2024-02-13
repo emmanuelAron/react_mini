@@ -1,0 +1,50 @@
+{
+    "sourceFile": "src/css/Footer.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1707857705601,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1707857712135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,19 @@\n+.footer {\r\n+    /* background-color: dimgray; \r\n+    color: #fff; \r\n+    position: absolute; \r\n+    bottom: 0; \r\n+    width: 100%; \r\n+    height:10vh;\r\n+    padding: 10px; \r\n+    text-align: center;  */\r\n+\r\n+    background-color: darkgray;\r\n+    color: bisque;\r\n+    padding: 10px;\r\n+    text-align: center;\r\n+    flex-shrink: 0; /* Empêcher le footer de se rétrécir */\r\n+    margin-top: auto;\r\n+    width: 100vw;\r\n+    height: 10vh; \r\n+  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1707857720753,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,27 +11,8 @@\n     background-color: darkgray;\r\n     color: bisque;\r\n     padding: 10px;\r\n     text-align: center;\r\n-    flex-shrink: 0; /* Empêcher le footer de se rétrécir */\r\n-    margin-top: auto;\r\n-    width: 100vw;\r\n-    height: 10vh; \r\n-  }\n-.footer {\r\n-    /* background-color: dimgray; \r\n-    color: #fff; \r\n-    position: absolute; \r\n-    bottom: 0; \r\n-    width: 100%; \r\n-    height:10vh;\r\n-    padding: 10px; \r\n-    text-align: center;  */\r\n-\r\n-    background-color: darkgray;\r\n-    color: bisque;\r\n-    padding: 10px;\r\n-    text-align: center;\r\n     flex-shrink: 0; Empêcher le footer de se rétrécir\r\n     margin-top: auto;\r\n     width: 100vw;\r\n     height: 10vh; \r\n"
+                },
+                {
+                    "date": 1707857729228,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     background-color: darkgray;\r\n     color: bisque;\r\n     padding: 10px;\r\n     text-align: center;\r\n-    flex-shrink: 0; Empêcher le footer de se rétrécir\r\n+    /* flex-shrink: 0;  */\r\n     margin-top: auto;\r\n     width: 100vw;\r\n     height: 10vh; \r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1707857752980,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     height:10vh;\r\n     padding: 10px; \r\n     text-align: center;  */\r\n \r\n-    background-color: darkgray;\r\n+    /* background-color: darkgray; */\r\n     color: bisque;\r\n     padding: 10px;\r\n     text-align: center;\r\n     /* flex-shrink: 0;  */\r\n"
+                },
+                {
+                    "date": 1707857771248,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n     padding: 10px; \r\n     text-align: center;  */\r\n \r\n     /* background-color: darkgray; */\r\n+    \r\n     color: bisque;\r\n     padding: 10px;\r\n     text-align: center;\r\n     /* flex-shrink: 0;  */\r\n"
+                },
+                {
+                    "date": 1707857777915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,20 @@\n+.footer {\r\n+    /* background-color: dimgray; \r\n+    color: #fff; \r\n+    position: absolute; \r\n+    bottom: 0; \r\n+    width: 100%; \r\n+    height:10vh;\r\n+    padding: 10px; \r\n+    text-align: center;  */\r\n+\r\n+    /* background-color: darkgray; */\r\n+    background-color:\r\n+    color: bisque;\r\n+    padding: 10px;\r\n+    text-align: center;\r\n+    /* flex-shrink: 0;  */\r\n+    margin-top: auto;\r\n+    width: 100vw;\r\n+    height: 10vh; \r\n+  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1707857787450,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,20 @@\n+.footer {\r\n+    /* background-color: dimgray; \r\n+    color: #fff; \r\n+    position: absolute; \r\n+    bottom: 0; \r\n+    width: 100%; \r\n+    height:10vh;\r\n+    padding: 10px; \r\n+    text-align: center;  */\r\n+\r\n+    /* background-color: darkgray; */\r\n+    \r\n+    color: bisque;\r\n+    padding: 10px;\r\n+    text-align: center;\r\n+    /* flex-shrink: 0;  */\r\n+    margin-top: auto;\r\n+    width: 100vw;\r\n+    height: 10vh; \r\n+  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1707857797486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,6 @@\n .footer {\r\n-    /* background-color: dimgray; \r\n-    color: #fff; \r\n-    position: absolute; \r\n-    bottom: 0; \r\n-    width: 100%; \r\n-    height:10vh;\r\n-    padding: 10px; \r\n-    text-align: center;  */\r\n+   \r\n \r\n     /* background-color: darkgray; */\r\n     \r\n     color: bisque;\r\n@@ -16,45 +9,5 @@\n     /* flex-shrink: 0;  */\r\n     margin-top: auto;\r\n     width: 100vw;\r\n     height: 10vh; \r\n-  }\n-.footer {\r\n-    /* background-color: dimgray; \r\n-    color: #fff; \r\n-    position: absolute; \r\n-    bottom: 0; \r\n-    width: 100%; \r\n-    height:10vh;\r\n-    padding: 10px; \r\n-    text-align: center;  */\r\n-\r\n-    /* background-color: darkgray; */\r\n-    background-color:\r\n-    color: bisque;\r\n-    padding: 10px;\r\n-    text-align: center;\r\n-    /* flex-shrink: 0;  */\r\n-    margin-top: auto;\r\n-    width: 100vw;\r\n-    height: 10vh; \r\n-  }\n-.footer {\r\n-    /* background-color: dimgray; \r\n-    color: #fff; \r\n-    position: absolute; \r\n-    bottom: 0; \r\n-    width: 100%; \r\n-    height:10vh;\r\n-    padding: 10px; \r\n-    text-align: center;  */\r\n-\r\n-    /* background-color: darkgray; */\r\n-    \r\n-    color: bisque;\r\n-    padding: 10px;\r\n-    text-align: center;\r\n-    /* flex-shrink: 0;  */\r\n-    margin-top: auto;\r\n-    width: 100vw;\r\n-    height: 10vh; \r\n   }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1707857705601,
+            "name": "Commit-0",
+            "content": ".footer {\r\n    /* background-color: dimgray; \r\n    color: #fff; \r\n    position: absolute; \r\n    bottom: 0; \r\n    width: 100%; \r\n    height:10vh;\r\n    padding: 10px; \r\n    text-align: center;  */\r\n\r\n    background-color: darkgray;\r\n    color: bisque;\r\n    padding: 10px;\r\n    text-align: center;\r\n    flex-shrink: 0; Empêcher le footer de se rétrécir\r\n    margin-top: auto;\r\n    width: 100vw;\r\n    height: 10vh; \r\n  }"
+        }
+    ]
+}

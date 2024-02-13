@@ -2,8 +2,6 @@ import { useState } from "react";
 import data from "../../data.json"
 import { Link } from 'react-router-dom';
 
-//import TaskDetails from "./TaskDetails.jsx"
-
 function TodoList(){
     
     const [ tasksToDisplay, setTasksToDisplay ] = useState(data)
@@ -24,10 +22,14 @@ function TodoList(){
                 return(
                  //  <TaskDetails key={taskObj.id} task={taskObj} deleteTask={deleteTask} tasksToDisplay={tasksToDisplay} />
                     <div key={taskObj.id} className="movie card">
-                        <h2> Task : {taskObj.task} </h2>
-                        <h2> <Link to={`/tasks/${i+1}`}> Tasks </Link> </h2>
+                        <h2> <Link to={`/tasks/${i+1}`}> Task </Link> </h2>
+                        <h2> {taskObj.task} </h2>
                         
-                        <p className="condition"> Condition: 
+                        
+                        <p className="condition">  
+
+                        <img src="https://fontmeme.com/permalink/240213/ec2620d3b0600c5b51289ca99eb00f88.png" alt="police-anglosax-oblique" border="0" />
+
                         {
                         taskObj.completed ? 
                         

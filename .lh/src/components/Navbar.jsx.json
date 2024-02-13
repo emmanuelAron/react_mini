@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 16,
             "patches": [
                 {
                     "date": 1707840671596,
@@ -12,6 +12,66 @@
                 {
                     "date": 1707844905638,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n function Navbar() {\r\n     return (\r\n         <>\r\n-            <nav ><img className=\"logo\" src=\"src/assets/logo.png\" alt=\"eee\" ></img>\r\n+            <nav ><img className=\"logo\" src=\"/logo.png\" alt=\"eee\" ></img>\r\n                 <h1>Todo list game</h1>\r\n             </nav>\r\n         </>\r\n     )\r\n"
+                },
+                {
+                    "date": 1707856212916,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,10 +2,12 @@\n \r\n function Navbar() {\r\n     return (\r\n         <>\r\n-            <nav ><img className=\"logo\" src=\"/logo.png\" alt=\"eee\" ></img>\r\n-                <h1>Todo list game</h1>\r\n+\r\n+            <nav ><img className=\"logo\" src=\"/images/logo.png\" alt=\"eee\" ></img>\r\n+                <h1>Todo list</h1>\r\n+\r\n             </nav>\r\n         </>\r\n     )\r\n }\r\n"
+                },
+                {
+                    "date": 1707856223219,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     return (\r\n         <>\r\n \r\n             <nav ><img className=\"logo\" src=\"/images/logo.png\" alt=\"eee\" ></img>\r\n-                <h1>Todo list</h1>\r\n+                <h1>Todo list </h1>\r\n \r\n             </nav>\r\n         </>\r\n     )\r\n"
+                },
+                {
+                    "date": 1707856229240,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     return (\r\n         <>\r\n \r\n             <nav ><img className=\"logo\" src=\"/images/logo.png\" alt=\"eee\" ></img>\r\n-                <h1>Todo list </h1>\r\n+                <h1>Todo list application</h1>\r\n \r\n             </nav>\r\n         </>\r\n     )\r\n"
+                },
+                {
+                    "date": 1707856244891,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     return (\r\n         <>\r\n \r\n             <nav ><img className=\"logo\" src=\"/images/logo.png\" alt=\"eee\" ></img>\r\n-                <h1>Todo list application</h1>\r\n+                <h1 >Todo list application</h1>\r\n \r\n             </nav>\r\n         </>\r\n     )\r\n"
+                },
+                {
+                    "date": 1707856254515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     return (\r\n         <>\r\n \r\n             <nav ><img className=\"logo\" src=\"/images/logo.png\" alt=\"eee\" ></img>\r\n-                <h1 >Todo list application</h1>\r\n+                <h1 className=\"titl\">Todo list application</h1>\r\n \r\n             </nav>\r\n         </>\r\n     )\r\n"
+                },
+                {
+                    "date": 1707856260454,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     return (\r\n         <>\r\n \r\n             <nav ><img className=\"logo\" src=\"/images/logo.png\" alt=\"eee\" ></img>\r\n-                <h1 className=\"titl\">Todo list application</h1>\r\n+                <h1 className=\"title-todo\">Todo list application</h1>\r\n \r\n             </nav>\r\n         </>\r\n     )\r\n"
+                },
+                {
+                    "date": 1707856285330,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n //import logo from \"./assets/logo.png\";\r\n+import App\r\n \r\n function Navbar() {\r\n     return (\r\n         <>\r\n"
+                },
+                {
+                    "date": 1707856290494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n //import logo from \"./assets/logo.png\";\r\n-import App\r\n+import App from \"\"\r\n \r\n function Navbar() {\r\n     return (\r\n         <>\r\n"
+                },
+                {
+                    "date": 1707856297063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n //import logo from \"./assets/logo.png\";\r\n-import App from \"\"\r\n+import App from \"./App.css\"\r\n \r\n function Navbar() {\r\n     return (\r\n         <>\r\n"
+                },
+                {
+                    "date": 1707856310599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n //import logo from \"./assets/logo.png\";\r\n-import App from \"./App.css\"\r\n+import App from \"../App.css\"\r\n \r\n function Navbar() {\r\n     return (\r\n         <>\r\n"
+                },
+                {
+                    "date": 1707856322226,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n //import logo from \"./assets/logo.png\";\r\n-import App from \"../App.css\"\r\n+import App from \"../css/App.css\"\r\n \r\n function Navbar() {\r\n     return (\r\n         <>\r\n"
+                },
+                {
+                    "date": 1707856385652,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n //import logo from \"./assets/logo.png\";\r\n-import App from \"../css/App.css\"\r\n+import title-todo from \"../css/App.css\"\r\n \r\n function Navbar() {\r\n     return (\r\n         <>\r\n"
+                },
+                {
+                    "date": 1707856393317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n //import logo from \"./assets/logo.png\";\r\n-import title-todo from \"../css/App.css\"\r\n+import App from \"../css/App.css\"\r\n \r\n function Navbar() {\r\n     return (\r\n         <>\r\n"
+                },
+                {
+                    "date": 1707858265878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-//import logo from \"./assets/logo.png\";\r\n+\r\n import App from \"../css/App.css\"\r\n \r\n function Navbar() {\r\n     return (\r\n"
+                },
+                {
+                    "date": 1707858394377,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n \r\n-import App from \"../css/App.css\"\r\n+//import App from \"../css/App.css\"\r\n \r\n function Navbar() {\r\n     return (\r\n         <>\r\n"
                 }
             ],
             "date": 1707840671596,

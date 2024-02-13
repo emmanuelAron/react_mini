@@ -16,7 +16,7 @@ function TaskDetails(props) {
     <div key={foundTask.id} className="movie card">
       
     <h2> Task : {foundTask.task} </h2>
-    <p className="condition"> Condition: 
+    <p className="condition"> Done ? 
     {
     foundTask.completed ? 
       // <img className="correct" src="src/assets/Flat_tick_icon.svg"></img> 
@@ -25,7 +25,7 @@ function TaskDetails(props) {
      <img className="correct" src="/images/x.png"></img> 
     } 
     </p>
-    <button onClick={() => {deleteTask(foundTask.id)}}>Delete</button>
+    <button className='button-list' onClick={() => {deleteTask(foundTask.id)}}>Delete</button>
 </div>
   )
 }
