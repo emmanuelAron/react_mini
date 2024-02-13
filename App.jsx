@@ -20,6 +20,7 @@ import NotFound from './src/components/NotFound.jsx';
 import  TaskDetails  from './src/components/TaskDetails.jsx';
 import {About} from './src/components/About.jsx'
 import data from "./data.json"
+import Dashboard from './src/components/Dashboard.jsx';
 
 function App() {
 
@@ -30,7 +31,7 @@ function App() {
       <SideBar />
 
       <Routes>
-        <Route path="/" element={<TodoList />} />
+        <Route path="/" element={<Dashboard />} />
          {/* <Route path="/tasks/:taskId" element={<TaskDetails />} />  */}
         <Route path="/tasks/:taskId" element={<TaskDetails tasksToDisplay={data} />} />
         <Route path="/about" element={<About />} />
