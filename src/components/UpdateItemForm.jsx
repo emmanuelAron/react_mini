@@ -3,7 +3,7 @@
 // Dashboard.jsx
 import React, { useState } from 'react';
 import AddItemForm from './AddItemForm';
-import Todolist from './Todolist';
+import Todolist from './TodoList';
 import UpdateItemForm from './UpdateItemForm';
 
 function Dashboard() {
@@ -32,7 +32,7 @@ function Dashboard() {
   };
   return (
     <div className='dashboard'>
-    
+    <h1>TO DO LİST</h1>
     <AddItemForm onAddItem={handleAddItem} />
 
     <ul>
@@ -49,7 +49,7 @@ function Dashboard() {
     )}
 
     
-    <Todolist />
+    <Todo />
   </div>
 );
 }
