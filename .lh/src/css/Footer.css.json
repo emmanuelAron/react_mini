@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 19,
+            "activePatchIndex": 22,
             "patches": [
                 {
                     "date": 1707857705601,
@@ -84,6 +84,18 @@
                 {
                     "date": 1707859274718,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,25 +2,12 @@\n    \r\n     /* background-color: darkgray; */\r\n     background-color: bisque;\r\n     color: bisque;\r\n-    \r\n+    padding: 10px;\r\n     text-align: center;\r\n      \r\n     margin-top: auto;\r\n     width: 100vw;\r\n     height: 10vh; \r\n     \r\n-  }\n-.footer {\r\n-   \r\n-    /* background-color: darkgray; */\r\n-    background-color: bisque;\r\n-    color: bisque;\r\n-    padding: 10px;\r\n-    text-align: center;\r\n-     flex-shrink: 0;  \r\n-    margin-top: auto;\r\n-    width: 100vw;\r\n-    height: 10vh; \r\n-    \r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1707859579726,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .footer {\r\n    \r\n     /* background-color: darkgray; */\r\n-    background-color: bisque;\r\n+    /* background-color: bisque; */\r\n     color: bisque;\r\n     padding: 10px;\r\n     text-align: center;\r\n      \r\n"
+                },
+                {
+                    "date": 1707859679123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,5 @@\n .footer {\r\n-   \r\n-    /* background-color: darkgray; */\r\n-    /* background-color: bisque; */\r\n     color: bisque;\r\n     padding: 10px;\r\n     text-align: center;\r\n      \r\n"
+                },
+                {
+                    "date": 1707859684713,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,8 @@\n+.footer {\r\n+    color: bisque;\r\n+    padding: 10px;\r\n+    text-align: center;\r\n+    margin-top: auto;\r\n+    width: 100vw;\r\n+    height: 10vh; \r\n+  }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1707857705601,

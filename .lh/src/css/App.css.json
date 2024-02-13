@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 39,
+            "activePatchIndex": 42,
             "patches": [
                 {
                     "date": 1707852067629,
@@ -164,6 +164,18 @@
                 {
                     "date": 1707858190671,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,5 +70,7 @@\n   color:olive;\r\n   font-size: 50px;\r\n   \r\n }\r\n-.\n\\ No newline at end of file\n+.button-list{\r\n+  size:60\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1707859958529,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n #root {\r\n-  max-width: 1280px;\r\n+  max-width: 180px;\r\n   margin: 0 auto;\r\n   padding: 2rem;\r\n   text-align: center;\r\n    background-image: url('/images/todo3.jpg'); \r\n@@ -71,6 +71,6 @@\n   font-size: 50px;\r\n   \r\n }\r\n .button-list{\r\n-  size:60\r\n+  size:60px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1707859969808,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n #root {\r\n-  max-width: 180px;\r\n+  \r\n   margin: 0 auto;\r\n   padding: 2rem;\r\n   text-align: center;\r\n    background-image: url('/images/todo3.jpg'); \r\n"
+                },
+                {
+                    "date": 1707859980498,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,75 @@\n+#root {\r\n+  margin: 0 auto;\r\n+  padding: 2rem;\r\n+  text-align: center;\r\n+   background-image: url('/images/todo3.jpg'); \r\n+  background-size: cover;\r\n+  background-repeat: no-repeat;\r\n+  background-position: center;\r\n+  font-family: cursive;\r\n+}\r\n+\r\n+.logo {\r\n+  height: 6em;\r\n+  padding: 1.5em;\r\n+  will-change: filter;\r\n+  transition: filter 300ms;\r\n+}\r\n+.logo:hover {\r\n+  filter: drop-shadow(0 0 2em #646cffaa);\r\n+}\r\n+.logo.react:hover {\r\n+  filter: drop-shadow(0 0 2em #61dafbaa);\r\n+}\r\n+\r\n+\r\n+\r\n+.card {\r\n+  padding: 2em;\r\n+}\r\n+\r\n+.read-the-docs {\r\n+  color: #888;\r\n+}\r\n+\r\n+.App {\r\n+  min-height:100vh; \r\n+\tdisplay:flex; \r\n+\tflex-direction:column; \r\n+}\r\n+.todo-line{\r\n+  position: relative;\r\n+  max-width: 80%;\r\n+  margin: 2rem auto;\r\n+  padding: 1rem;\r\n+  border: 1px solid #666;\r\n+  box-shadow: 5px 5px 10px -5px;\r\n+  transition: 0.4s;\r\n+}\r\n+.todo-line:hover {\r\n+  cursor: pointer;\r\n+  box-shadow: 5px 5px 10px 0px;\r\n+}\r\n+\r\n+.condition {\r\n+  position: relative;\r\n+\r\n+}\r\n+.correct {\r\n+\r\n+  position: absolute;\r\n+  top: 50%;\r\n+  left: 60%;\r\n+  transform: translate(-50%, -50%);\r\n+  height: 1em;\r\n+  will-change: filter;\r\n+  transition: filter 300ms;\r\n+}\r\n+.title-todo{\r\n+  color:olive;\r\n+  font-size: 50px;\r\n+  \r\n+}\r\n+.button-list{\r\n+  size:60px;\r\n+}\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1707852067629,
