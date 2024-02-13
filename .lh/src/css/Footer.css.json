@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 8,
+            "activePatchIndex": 19,
             "patches": [
                 {
                     "date": 1707857705601,
@@ -40,6 +40,50 @@
                 {
                     "date": 1707857797486,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,6 @@\n .footer {\r\n-    /* background-color: dimgray; \r\n-    color: #fff; \r\n-    position: absolute; \r\n-    bottom: 0; \r\n-    width: 100%; \r\n-    height:10vh;\r\n-    padding: 10px; \r\n-    text-align: center;  */\r\n+   \r\n \r\n     /* background-color: darkgray; */\r\n     \r\n     color: bisque;\r\n@@ -16,45 +9,5 @@\n     /* flex-shrink: 0;  */\r\n     margin-top: auto;\r\n     width: 100vw;\r\n     height: 10vh; \r\n-  }\n-.footer {\r\n-    /* background-color: dimgray; \r\n-    color: #fff; \r\n-    position: absolute; \r\n-    bottom: 0; \r\n-    width: 100%; \r\n-    height:10vh;\r\n-    padding: 10px; \r\n-    text-align: center;  */\r\n-\r\n-    /* background-color: darkgray; */\r\n-    background-color:\r\n-    color: bisque;\r\n-    padding: 10px;\r\n-    text-align: center;\r\n-    /* flex-shrink: 0;  */\r\n-    margin-top: auto;\r\n-    width: 100vw;\r\n-    height: 10vh; \r\n-  }\n-.footer {\r\n-    /* background-color: dimgray; \r\n-    color: #fff; \r\n-    position: absolute; \r\n-    bottom: 0; \r\n-    width: 100%; \r\n-    height:10vh;\r\n-    padding: 10px; \r\n-    text-align: center;  */\r\n-\r\n-    /* background-color: darkgray; */\r\n-    \r\n-    color: bisque;\r\n-    padding: 10px;\r\n-    text-align: center;\r\n-    /* flex-shrink: 0;  */\r\n-    margin-top: auto;\r\n-    width: 100vw;\r\n-    height: 10vh; \r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1707858841267,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n .footer {\r\n    \r\n-\r\n     /* background-color: darkgray; */\r\n-    \r\n+    background-color:\r\n     color: bisque;\r\n     padding: 10px;\r\n     text-align: center;\r\n     /* flex-shrink: 0;  */\r\n"
+                },
+                {
+                    "date": 1707858848362,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .footer {\r\n    \r\n     /* background-color: darkgray; */\r\n-    background-color:\r\n+    background-color: bisque;\r\n     color: bisque;\r\n     padding: 10px;\r\n     text-align: center;\r\n     /* flex-shrink: 0;  */\r\n"
+                },
+                {
+                    "date": 1707859048764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,5 +8,6 @@\n     /* flex-shrink: 0;  */\r\n     margin-top: auto;\r\n     width: 100vw;\r\n     height: 10vh; \r\n+    bottom\r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1707859068002,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,6 +8,7 @@\n     /* flex-shrink: 0;  */\r\n     margin-top: auto;\r\n     width: 100vw;\r\n     height: 10vh; \r\n-    bottom\r\n+    bottom:0;\r\n+    position\r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1707859095668,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,6 +9,7 @@\n     margin-top: auto;\r\n     width: 100vw;\r\n     height: 10vh; \r\n     bottom:0;\r\n-    position\r\n+    position:absolute;\r\n+    width: 100%;\r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1707859119074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,6 @@\n     /* flex-shrink: 0;  */\r\n     margin-top: auto;\r\n     width: 100vw;\r\n     height: 10vh; \r\n-    bottom:0;\r\n-    position:absolute;\r\n-    width: 100%;\r\n+    \r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1707859233386,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,7 @@\n     text-align: center;\r\n     /* flex-shrink: 0;  */\r\n     margin-top: auto;\r\n     width: 100vw;\r\n-    height: 10vh; \r\n+    height: 10; \r\n     \r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1707859240397,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,7 @@\n     text-align: center;\r\n     /* flex-shrink: 0;  */\r\n     margin-top: auto;\r\n     width: 100vw;\r\n-    height: 10; \r\n+    height: 10vh; \r\n     \r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1707859249460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     background-color: bisque;\r\n     color: bisque;\r\n     padding: 10px;\r\n     text-align: center;\r\n-    /* flex-shrink: 0;  */\r\n+     flex-shrink: 0;  \r\n     margin-top: auto;\r\n     width: 100vw;\r\n     height: 10vh; \r\n     \r\n"
+                },
+                {
+                    "date": 1707859268572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+.footer {\r\n+   \r\n+    /* background-color: darkgray; */\r\n+    background-color: bisque;\r\n+    color: bisque;\r\n+    \r\n+    text-align: center;\r\n+     \r\n+    margin-top: auto;\r\n+    width: 100vw;\r\n+    height: 10vh; \r\n+    \r\n+  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1707859274718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,25 +2,12 @@\n    \r\n     /* background-color: darkgray; */\r\n     background-color: bisque;\r\n     color: bisque;\r\n-    \r\n+    padding: 10px;\r\n     text-align: center;\r\n      \r\n     margin-top: auto;\r\n     width: 100vw;\r\n     height: 10vh; \r\n     \r\n-  }\n-.footer {\r\n-   \r\n-    /* background-color: darkgray; */\r\n-    background-color: bisque;\r\n-    color: bisque;\r\n-    padding: 10px;\r\n-    text-align: center;\r\n-     flex-shrink: 0;  \r\n-    margin-top: auto;\r\n-    width: 100vw;\r\n-    height: 10vh; \r\n-    \r\n   }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1707857705601,
